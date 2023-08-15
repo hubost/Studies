@@ -1,0 +1,196 @@
+
+knowledge source cafe
+
+facets
+
+  ask     yes;
+  single  yes;
+
+  pilkarz_dla_Ciebie :
+     ask     no
+     single  yes
+     val oneof  
+     { 
+        "Artur Boruc",
+        "Gianluigi Dionarumma",
+        "Marcelo",
+        "Alphonso Davies",
+        "Michal Pazdan",
+        "Raphael Varane",
+        "Sean Kleiber",
+        "Benjamin Pavard",
+        "Martin Odeegard",
+        "Luka Modric",
+        "Nicolo Zaniolo",
+        "Kevin De Bruyne",
+        "Marc Cucurela",
+        "Bukayo Saka",
+        "Christian Pulisic",
+        "Neymar",
+        "Arkadiusz Milik",
+        "Robert Lewandowski",
+		"Rafal Augustyniak",
+		"Joshua Kimmich"
+
+        
+     };
+
+	  pozycja :
+     ask     yes
+     single  yes
+     query   "Wybierz na jakiej pozycji ma grac pilkarz"
+     val oneof  
+     { 
+        "Bramkarz",
+        "Obronca",
+        "Pomocnik",
+        "Napastnik"
+		};
+	  pozycja_obronca :
+     ask     yes
+     single  yes
+     query   "Wybierz na jakiej pozycji ma grac obronca"
+     val oneof  
+     { 
+        "Lewy obronca",
+		"Srodkowy obronca",
+		"Prawy obronca"
+		};
+	pozycja_pomocnik :
+     ask     yes
+     single  yes
+     query   "Wybierz na jakiej pozycji ma grac pomocnik"
+     val oneof  
+     { 
+        "Srodkowy pomocnik defensywny",
+        "Srodkowy pomocnik ofensywny",
+        "Srodkowy pomocnik",
+        "Boczny pomocnik"
+		};
+		pozycja_napastnik :
+     ask     yes
+     single  yes
+     query   "Wybierz na jakiej pozycji ma grac napastnik"
+     val oneof  
+     { 
+        "Srodkowy napastnik",
+        "Skrzydlowy"
+		};
+	doswiadczenie :
+     ask     yes
+     single  yes
+     query   "Jakie doswiadczenie ma miec pilkarz?"
+     val oneof  
+     { 
+        "Czlonek podstawowej 11",
+        "Klasa swiatowa"
+       
+		};
+     
+
+end; // facets
+
+rules
+
+   1001: pilkarz_dla_Ciebie ( typ ) = "Artur Boruc" if
+             pozycja ( typ ) = "Bramkarz"   
+             & doswiadczenie ( typ ) = "Czlonek podstawowej 11";
+
+   1002: pilkarz_dla_Ciebie ( typ ) = "Gianluigi Dionarumma" if
+             pozycja ( typ ) = "Bramkarz"   
+             & doswiadczenie ( typ ) = "Klasa swiatowa";
+
+   1003: pilkarz_dla_Ciebie ( typ ) = "Marcelo" if
+             pozycja ( typ ) = "Obronca"
+             & pozycja_obronca ( typ ) ="Lewy obronca"			 
+             & doswiadczenie ( typ ) = "Czlonek podstawowej 11";
+
+   1004: pilkarz_dla_Ciebie ( typ ) = "Alphonso Davies" if
+             pozycja ( typ ) = "Obronca"
+             & pozycja_obronca ( typ ) ="Lewy obronca"			 
+             & doswiadczenie ( typ ) = "Klasa swiatowa";
+
+   1005: pilkarz_dla_Ciebie ( typ ) = "Michal Pazdan" if
+             pozycja ( typ ) = "Obronca"
+             & pozycja_obronca ( typ ) ="Srodkowy obronca"			 
+             & doswiadczenie ( typ ) = "Czlonek podstawowej 11";
+
+   1006: pilkarz_dla_Ciebie ( typ ) = "Raphael Varane" if
+             pozycja ( typ ) = "Obronca"
+             & pozycja_obronca ( typ ) ="Srodkowy obronca"			 
+             & doswiadczenie ( typ ) = "Klasa swiatowa";
+			 
+   1007: pilkarz_dla_Ciebie ( typ ) = "Sean Kleiber" if
+             pozycja ( typ ) = "Obronca"
+             & pozycja_obronca ( typ ) ="Prawy obronca"			 
+             & doswiadczenie ( typ ) = "Czlonek podstawowej 11";
+			 
+   1008: pilkarz_dla_Ciebie ( typ ) = "Benjamin Pavard" if
+             pozycja ( typ ) = "Obronca"
+             & pozycja_obronca ( typ ) ="Prawy obronca"			 
+             & doswiadczenie ( typ ) = "Klasa swiatowa";
+			 
+   1009: pilkarz_dla_Ciebie ( typ ) = "Martin Odeegard" if
+             pozycja ( typ ) = "Pomocnik"
+             & pozycja_pomocnik ( typ ) ="Srodkowy pomocnik"			 
+             & doswiadczenie ( typ ) = "Czlonek podstawowej 11";
+			 
+   1010: pilkarz_dla_Ciebie ( typ ) = "Luka Modric" if
+             pozycja ( typ ) = "Pomocnik"
+             & pozycja_pomocnik ( typ ) ="Srodkowy pomocnik"			 
+             & doswiadczenie ( typ ) = "Klasa swiatowa";
+			 
+   1011: pilkarz_dla_Ciebie ( typ ) = "Nicolo Zaniolo" if
+             pozycja ( typ ) = "Pomocnik"
+             & pozycja_pomocnik ( typ ) ="Srodkowy pomocnik ofensywny"			 
+             & doswiadczenie ( typ ) = "Czlonek podstawowej 11";
+			 
+   1012: pilkarz_dla_Ciebie ( typ ) = "Kevin De Bruyne" if
+             pozycja ( typ ) = "Pomocnik"
+             & pozycja_pomocnik ( typ ) ="Srodkowy pomocnik ofensywny"			 
+             & doswiadczenie ( typ ) = "Klasa swiatowa";
+			 
+   1013: pilkarz_dla_Ciebie ( typ ) = "Rafal Augustyniak" if
+             pozycja ( typ ) = "Pomocnik"
+             & pozycja_pomocnik ( typ ) ="Srodkowy pomocnik defensywny"			 
+             & doswiadczenie ( typ ) = "Czlonek podstawowej 11";
+			 
+   1014: pilkarz_dla_Ciebie ( typ ) = "Joshua Kimmich" if
+             pozycja ( typ ) = "Pomocnik"
+             & pozycja_pomocnik ( typ ) ="Srodkowy pomocnik defensywny"			 
+             & doswiadczenie ( typ ) = "Klasa swiatowa";
+			 
+   1015: pilkarz_dla_Ciebie ( typ ) = "Marc Cucurela" if
+             pozycja ( typ ) = "Pomocnik"
+             & pozycja_pomocnik ( typ ) ="Boczny pomocnik"			 
+             & doswiadczenie ( typ ) = "Czlonek podstawowej 11";	
+			 
+   1016: pilkarz_dla_Ciebie ( typ ) = "Bukayo Saka" if
+             pozycja ( typ ) = "Pomocnik"
+             & pozycja_pomocnik ( typ ) ="Boczny pomocnik"			 
+             & doswiadczenie ( typ ) = "Klasa swiatowa";
+			 
+   1017: pilkarz_dla_Ciebie ( typ ) = "Christian Pulisic" if
+             pozycja ( typ ) = "Napastnik"
+             & pozycja_napastnik ( typ ) ="Skrzydlowy"			 
+             & doswiadczenie ( typ ) = "Czlonek podstawowej 11";
+			 
+   1018: pilkarz_dla_Ciebie ( typ ) = "Neymar" if
+             pozycja ( typ ) = "Napastnik"
+             & pozycja_napastnik ( typ ) ="Skrzydlowy"			 
+             & doswiadczenie ( typ ) = "Klasa swiatowa";
+			 
+   1019: pilkarz_dla_Ciebie ( typ ) = "Arkadiusz Milik" if
+             pozycja ( typ ) = "Napastnik"
+             & pozycja_napastnik ( typ ) ="Srodkowy napastnik"			 
+             & doswiadczenie ( typ ) = "Czlonek podstawowej 11";
+			 
+   1020: pilkarz_dla_Ciebie ( typ ) = "Robert Lewandowski" if
+             pozycja ( typ ) = "Napastnik"
+             & pozycja_napastnik ( typ ) ="Srodkowy napastnik"			 
+             & doswiadczenie ( typ ) = "Klasa swiatowa";			 
+
+  
+
+end; // rules
+end; // knowledge source

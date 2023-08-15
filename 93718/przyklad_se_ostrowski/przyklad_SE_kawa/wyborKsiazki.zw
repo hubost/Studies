@@ -1,0 +1,183 @@
+knowledge source library
+
+facets
+
+  ask     yes;
+  single  yes;
+
+  ksiazkaDlaCiebie :
+     ask     no
+     single  yes
+     val oneof  
+     { 
+        "¯ycie œredniowiecznego rycerza",
+        "M³ot na czarownicy",
+        "Zmierzch",
+        "Lew,czarownica i stara szafa",
+        "Harry Potter",
+        "Hobbit",
+        "Planeta Skarbów",
+        "Przetrwaæ upadek cywilizacji i prze¿yæ",
+        "Gwiezdne Wojny",
+        "Pretty Woman",
+        "Dla ciebie wszystko",
+        "Walcz o mnie",
+        "Odnaleziona mi³oœæ",
+        "W jednej chwili",
+        "Trzy metry nad niebem",
+        "Wybaczam Ci",
+        "Bez po¿egnania",
+        "Shantaram",
+        "Detektyw",
+        "Sherlock Holmes"     
+     };
+	 
+  odpGatunek :
+	 ask     yes
+     single  yes
+	 query   "Jaki gatunek ksi¹¿ki chcia³byœ przeczytaæ?"
+     val oneof  
+     {
+		"Fantasy",
+		"Romantyczny",
+		"Detektywistyczny"
+     };
+	 
+  odpFantasy :
+	 ask     yes
+     single  yes
+	 query   "W jakim klimacie preferujesz opowieœci?"
+     val oneof  
+     {
+		"Œredniowieczny",
+		"Nowoczesny",
+		"Poza naszym wymiarem"
+     };
+	 
+  odpSredniowieczny :
+	 ask     yes
+     single  yes
+	 query   "Czy poszukujesz ksi¹¿ki w której mia³y miejsce epickie pojedynki?"
+     val oneof  
+     {
+		"Tak",
+		"Nie"
+     };
+	 
+  odpNowoczesny :
+	 ask     yes
+     single  yes
+	 query   "Co chcia³byœ aby pojawi³o siê w ksi¹¿ce?"
+     val oneof  
+     {
+		"Wampiry",
+		"Lwy",
+		"Czarodzieje",
+		"Krasnoludy"
+     };
+	 
+  odpPozaNaszymWymiarem :
+	 ask     yes
+     single  yes
+	 query   "O jakiej tematyce preferujesz ksi¹¿ke?"
+     val oneof  
+     {
+		"Ekspedycje kosmiczne,
+		"Upadek cywilizacji",
+		"Walki œwiatów"
+     };
+	 
+  odpRomantyczny :
+	 ask     yes
+     single  yes
+	 query   "Jak¹ powieœæ preferujesz?"
+     val oneof  
+     {
+		"Z Happy Endem",
+		"Bez Happy Endu"
+     };
+	 
+  odpZHappyEndem :
+	 ask     yes
+     single  yes
+	 query   "Preferujesz skrzy¿owanie powieœci romantycznej z..."
+     val oneof  
+     {
+		"Komedi¹",
+		"Histori¹",
+		"Akcj¹"
+     };
+	 
+  odpBezHappyEndu :
+	 ask     yes
+     single  yes
+	 query   "Co powinieneœ czuæ po przeczytaniu ksi¹¿ki?"
+     val oneof  
+     {
+		"Radoœæ",
+		"Smutek",
+		"Gniew"
+     };
+	 
+  odpDetektywistyczne :
+	 ask     yes
+     single  yes
+	 query   "Jakiego typu preferujesz powieœæ detektywistyczn¹?"
+     val oneof  
+     {
+		"Krymina³",
+		"Poszukiwanie czegoœ"
+     };	 
+	 
+  odpKryminal :
+	 ask     yes
+     single  yes
+	 query   "Co powinno staæ siê z przestêpc¹?"
+     val oneof  
+     {
+		"Powinien zostaæ odnaleziony",
+		"Powinien zostaæ zabity",
+		"Powinien uciec"
+     };
+	 
+  odpPoszukiwanieCzegos :
+	 ask     yes
+     single  yes
+	 query   "Co powinno staæ siê z poszukiwanym przedmiotem?"
+     val oneof  
+     {
+		"Powinien nigdy nie zostaæ odnaleziony",
+		"Powinien zostaæ odnaleziony"
+     };
+	 
+end; // koniec facets
+	 
+rules
+
+	1: ksiazkaDlaCiebie (typ) = "¯ycie œredniowiecznego rycerza" if
+		odpGatunek (typ) = "Fantasy" 
+		&odpFantasy (typ) = "Œredniowieczny"
+		&odpSredniowieczny (typ) = "Tak";
+	
+	2: ksiazkaDlaCiebie (typ) = "M³ot na czarownicy" if
+		odpGatunek (typ) = "Fantasy" 
+		&odpFantasy (typ) = "Œredniowieczny"
+		&odpSredniowieczny (typ) = "Nie";
+	
+	3: ksiazkaDlaCiebie (typ) = "Zmierzch" if
+		odpGatunek (typ) = "Fantasy" 
+		&odpFantasy (typ) = "Nowoczesny"
+		&odpNowoczesny (typ) = "Wampiry";
+	 
+	4: ksiazkaDlaCiebie (typ) = "Lew czarownica i stara szafa" if
+		odpGatunek (typ) = "Fantasy" 
+		&odpFantasy (typ) = "Nowoczesny"
+		&odpNowoczesny (typ) = "Lwy";	 
+	 
+	5: ksiazkaDlaCiebie (typ) = "Harry Potter" if
+		odpGatunek (typ) = "Fantasy" 
+		&odpFantasy (typ) = "Nowoczesny"
+		&odpNowoczesny (typ) = "Czarodzieje";	 
+end;
+end;
+	 

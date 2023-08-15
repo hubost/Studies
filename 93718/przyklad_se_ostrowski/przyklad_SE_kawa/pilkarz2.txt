@@ -1,0 +1,619 @@
+//------------------------------------------------------------------------------
+//
+// Tekst Ÿród³a zapisanego w pliku:
+//  cafe.bzw
+//
+//------------------------------------------------------------------------------
+
+knowledge source cafe
+
+facets
+
+  ask     yes;
+  single  yes;
+
+  kawa_dla_Ciebie :
+     ask     no
+     single  yes
+     val oneof  
+     { 
+        "Artur Boruc",
+        "Gianluigi Dionarumma",
+        "Marcelo",
+        "Alphonso Davies",
+        "Michal Pazdan",
+        "Raphael Varane",
+        "Sean Kleiber",
+        "Benjamin Pavard",
+        "Martin Odeegard",
+        "Luka Modric",
+        "Nicolo Zaniolo",
+        "Kevin De Bruyne",
+        "Marc Cucurela",
+        "Bukayo Saka",
+        "Christian Pulisic",
+        "Neymar",
+        "Arkadiusz Milik",
+        "Robert Lewandowski",
+		"Rafal Augustyniak",
+		"Joshua Kimmich",
+        
+     }
+picture
+        {
+        "Grafika\\Mocha.bmp",
+        "Grafika\\Kawa po wiedeñsku.bmp",
+        "Grafika\\Cappuccino.bmp",
+        "Grafika\\Cafe au lait.bmp",
+        "Grafika\\Caffee latte macchiato.bmp",
+        "Grafika\\Irish Caffee.bmp",
+        "Grafika\\Kawa œmietankowa.bmp",
+        "Grafika\\Podwójne esspreso.bmp",
+        "Grafika\\Esspreso.bmp",
+        "Grafika\\Ice Coffee.bmp",
+        "Grafika\\Kawa mro¿ona z lodami.bmp",
+        "Grafika\\Frozen Latte.bmp",
+        "Grafika\\Vanilla Frozen Latte.bmp",
+        "Grafika\\Raspberry Frozen Latte.bmp",
+        "Grafika\\Maple Frozen Latte.bmp",
+        "Grafika\\Irish Cream Frozen Latte.bmp",
+        "Grafika\\Vanilla Cold Coffe.bmp",
+        "Grafika\\Raspberry Cold Coffe.bmp",
+        "Grafika\\Maple Cold Coffee.bmp",
+        "Grafika\\Irish Cream Cold Coffee.bmp",
+        "Grafika\\Cafe Americano.bmp",
+        "Grafika\\Chocolate Cold Coffee.bmp",
+        "Grafika\\Frozen Latte z bit¹ œmietan¹.bmp",
+        "Grafika\\Cafe Affogato.bmp",
+        "Grafika\\Frappe.bmp",
+        "Grafika\\Vanilla Hot Coffee.bmp",
+        "Grafika\\Raspberry Hot Coffe.bmp",
+        "Grafika\\Maple Hot Coffe.bmp",
+        "Grafika\\Irish Cream Hot Coffee.bmp",
+        "Grafika\\Kawa Kapitañska.bmp",
+        "Grafika\\Kawa z Cherry.bmp",
+        "Grafika\\Zbój.bmp",
+        "Grafika\\Barmañskie latte.bmp",
+        "Grafika\\Kawa zakrapiana miodem pitnym.bmp",
+        "Grafika\\Red Dry Coffee.bmp",
+        "Grafika\\Red Sweet Coffee.bmp",
+        "Grafika\\White Dry Coffee.bmp",
+        "Grafika\\White Sweet Coffee.bmp",
+        "Grafika\\Kawa z Amaretto.bmp",
+        "Grafika\\Kawa z Advocatem.bmp"
+     };
+
+  preferowana_kawa :
+     ask     yes
+     single  yes
+     query   "Jak¹ kawê preferujesz?"
+     val oneof  
+     { 
+        "Gor¹ca",
+        "Zimna"
+     }
+picture
+        {
+        "Grafika\\Gor¹ca.bmp",
+        "Grafika\\Zimna.bmp"
+     };
+
+  dodatki :
+     ask     yes
+     single  yes
+     query   "Czy kawa ma zawieraæ dodatki?"
+     val oneof  
+     { 
+        "Tak",
+        "Nie"
+     }
+picture
+        {
+        "Grafika\\TAK.bmp",
+        "Grafika\\NIE.bmp"
+     };
+
+  nabia³ :
+     ask     yes
+     single  yes
+     query   "Jaki rodzaj nabia³u wybierasz?"
+     val oneof  
+     { 
+        "Mleko",
+        "Œmietana"
+     }
+picture
+        {
+        "Grafika\\Mleko.bmp",
+        "Grafika\\Œmietana.bmp"
+     };
+
+  moc :
+     ask     yes
+     single  yes
+     query   "Czy Twoja kawa ma byæ mocna?"
+     val oneof  
+     { 
+        "Tak",
+        "Nie"
+}
+picture
+        {
+        "Grafika\\Kawa mocna.bmp",
+        "Grafika\\S³aba kawa.bmp"
+     };
+
+  dodatki_typu_bita_œmietana_cukier :
+     ask     yes
+     single  yes
+     query   "Czy Twoja kawa ma zawieraæ dodatki typu: bita œmietana, cukier?"
+     val oneof  
+     { 
+        "Tak",
+        "Nie"
+     }
+picture
+        {
+        "Grafika\\Œmietana cukier.bmp",
+        "Grafika\\NIESC.bmp"
+     };
+
+  alkohol :
+     ask     yes
+     single  yes
+     query   "Czy Twoja kawa ma mieæ zawartoœæ alkoholu?"
+     val oneof  
+     { 
+        "Tak",
+        "Nie"
+     }
+picture
+        {
+        "Grafika\\Tak - alkohol.bmp",
+        "Grafika\\Nie - alkohol.bmp"
+     };
+
+  podwójne_esspreso :
+     ask     yes
+     single  yes
+     query   "Czy masz ochotê na podwójne esspreso?"
+     val oneof  
+     { 
+        "Tak",
+        "Nie"
+     }
+picture
+        {
+        "Grafika\\Kawa mocnaa.bmp",
+        "Grafika\\S³aba kawaa.bmp"
+     };
+
+  dodatki_typu_czekolada_kakao :
+     ask     yes
+     single  yes
+     query   "Jakie dodatki ma zawieraæ Twoja kawa?"
+     val oneof  
+     { 
+        "Kakao",
+        "Czekolada"
+     }
+picture
+        {
+        "Grafika\\Kakao.bmp",
+        "Grafika\\Czekolada.bmp"
+     };
+
+  cynamon :
+     ask     yes
+     single  yes
+     query   "Czy masz ochotê na kawê z cynamonem?"
+     val oneof  
+     { 
+        "Tak",
+        "Nie"
+     }
+picture
+        {
+        "Grafika\\Cynamon.bmp",
+        "Grafika\\NIECynamon.bmp"
+     };
+
+kakao :
+     ask     yes
+     single  yes
+     query   "Czy Twoja kawa ma mieæ dodatek kakao?"
+     val oneof  
+     { 
+        "Tak",
+        "Nie"
+     }
+picture
+        {
+        "Grafika\\Kakaoo.bmp",
+        "Grafika\\NIEKakao.bmp"
+     };
+
+  sch³odzenie :
+     ask     yes
+     single  yes
+     query   "Wybierz sposób schlodzenia kawy:"
+     val oneof  
+     { 
+        "Lód kruszony",
+        "Lody",
+        "Obie opcje"
+     }
+picture
+        {
+        "Grafika\\Lód kruszony.bmp",
+        "Grafika\\Lody.bmp",
+        "Grafika\\Obie opcje.bmp"
+     };
+
+  dodatki_lód_kruszony :
+     ask     yes
+     single  yes
+     query   "Jakie dodatki ma zawieraæ Twoja kawa?"
+     val oneof  
+     { 
+        "Czekolada",
+        "Syrop",
+        "Bita œmietana ",
+        "Wszystkie wymienione "
+     };
+
+  jednolita :
+     ask     yes
+     single  yes
+     query   "Czy kawa ma byæ jednolita?"
+     val oneof  
+     { 
+        "Tak",
+        "Nie"
+     };
+
+  syrop :
+     ask     yes
+     single  yes
+     query   "Wybierz ulubiony syrop"
+     val oneof  
+     { 
+        "Irish Cream",
+        "Waniliowy",
+        "Malinowy",
+        "Klonowy"
+     }
+picture
+        {
+        "Grafika\\Cream.bmp",
+        "Grafika\\Waniliowy.bmp",
+        "Grafika\\Malinowy.bmp",
+        "Grafika\\Klonowy.bmp"
+     };
+
+  dodatki_typu_bita_œmietana_posypka_czekoladowa :
+     ask     yes
+     single  yes
+     query   "Czy kawa ma zawieraæ dodatki typu: bita œmitana, posypka czekoladowa?"
+     val oneof  
+     { 
+        "Tak",
+        "Nie"
+     }
+picture
+        {
+
+        "Grafika\\TAAK.bmp",
+        "Grafika\\NIIE.bmp"
+     };
+
+  dodatek_syrop :
+     ask     yes
+     single  yes
+     query   "Czy masz apetyt na kawê z syropem?"
+     val oneof  
+     { 
+        "Tak",
+        "Nie"
+     }
+picture
+        {
+
+        "Grafika\\Syroop.bmp",
+        "Grafika\\NIESyrop.bmp"
+     };
+
+  procent :
+     ask     yes
+     single  yes
+     query   "Wybierz zawartoœæ procentow¹ alkoholu:"
+     val oneof  
+     { 
+        "17%",
+        "36%",
+        "40%"
+     }
+picture
+        {
+
+        "Grafika\\17.bmp",
+	"Grafika\\36.bmp",
+        "Grafika\\40.bmp"
+     };
+
+  likier :
+     ask     yes
+     single  yes
+     query   "Czy masz ochotê na kawê z likierem?"
+     val oneof  
+     { 
+        "Tak",
+        "Nie"
+     }
+picture
+        {
+
+        "Grafika\\Likier.bmp",
+        "Grafika\\NieLikier.bmp"
+     };
+
+  rum :
+     ask     yes
+     single  yes
+     query   "Czy masz ochotê na kawê z rumem?"
+     val oneof  
+     { 
+        "Tak",
+        "Nie"
+     }
+picture
+        {
+
+        "Grafika\\Rum.bmp",
+        "Grafika\\NieRum.bmp"
+     };
+
+  migda³y :
+     ask     yes
+     single  yes
+     query   "Czy Twoja kawa ma zawieraæ migda³y?"
+     val oneof  
+     { 
+        "Tak",
+        "Nie"
+     }
+picture
+        {
+
+        "Grafika\\Migda³y.bmp",
+        "Grafika\\NIEMigda³y.bmp"
+     };
+
+  whisky :
+     ask     yes
+     single  yes
+     query   "Czy masz ochotê na kawê z whisky?"
+     val oneof  
+     { 
+        "Tak",
+        "Nie"
+     }
+picture
+        {
+
+        "Grafika\\Whisky.bmp",
+        "Grafika\\NIEWhisky.bmp"
+     };
+
+  rodzaj_wina :
+     ask     yes
+     single  yes
+     query   "Wybierz rodzaj wina:"
+     val oneof  
+     { 
+        "S³odkie",
+        "Wytrawne"
+     };
+
+  dodatek_wino :
+     ask     yes
+     single  yes
+     query   "Czy masz ochotê na kawê z dodatkiem wina?"
+     val oneof  
+     { 
+        "Tak",
+        "Nie"
+     };
+
+  wino :
+     ask     yes
+     single  yes
+     query   "Wybierz wino:"
+     val oneof  
+     { 
+        "Bia³e",
+        "Czerwone"
+     }
+picture
+        {
+
+        "Grafika\\Bia³e.bmp",
+        "Grafika\\Czerwone.bmp"
+     };
+
+  miód :
+     ask     yes
+     single  yes
+     query   "Czy masz ochotê na kawê z dodatkiem miodu?"
+     val oneof  
+     { 
+        "Tak",
+        "Nie"
+     }
+	  pozycja :
+     ask     yes
+     single  yes
+     query   "Wybierz na jakiej pozycji ma grac pilkarz"
+     val oneof  
+     { 
+        "Bramkarz",
+        "Obronca",
+        "Pomocnik",
+        "Napastnik"
+		}
+	  pozycja_obronca :
+     ask     yes
+     single  yes
+     query   "Wybierz na jakiej pozycji ma grac obronca"
+     val oneof  
+     { 
+        "Lewy obronca",
+		"Srodkowy obronca",
+		"Prawy obronca"
+		}
+	pozycja_pomocnik :
+     ask     yes
+     single  yes
+     query   "Wybierz na jakiej pozycji ma grac pomocnik"
+     val oneof  
+     { 
+        "Srodkowy pomocnik defensywny",
+        "Srodkowy pomocnik ofensywny",
+        "Srodkowy pomocnik",
+        "Boczny pomocnik"
+		}
+		pozycja_napastnik :
+     ask     yes
+     single  yes
+     query   "Wybierz na jakiej pozycji ma grac napastnik"
+     val oneof  
+     { 
+        "Srodkowy napastnik",
+        "Skrzydlowy"
+		}
+	doswiadczenie :
+     ask     yes
+     single  yes
+     query   "Jakie doswiadczenie ma miec pilkarz?"
+     val oneof  
+     { 
+        "Czlonek podstawowej 11",
+        "Klasa swiatowa"
+       
+		}
+	
+	
+picture
+        {
+
+        "Grafika\\Miód.bmp",
+        "Grafika\\NIEMiód.bmp"
+     };
+
+end; // facets
+
+rules
+
+   1001: pilkarz_dla_Ciebie ( typ ) = "Artur Boruc" if
+             pozycja ( typ ) = "Bramkarz"   
+             & doswiadczenie ( typ ) = "Czlonek podstawowej 11";
+
+   1002: pilkarz_dla_Ciebie ( typ ) = "Gianluigi Dionarumma" if
+             pozycja ( typ ) = "Bramkarz"   
+             & doswiadczenie ( typ ) = "Klasa swiatowa";
+
+   1003: pilkarz_dla_Ciebie ( typ ) = "Marcelo" if
+             pozycja ( typ ) = "Obronca"
+             & pozycja_obronca ( typ ) ="Lewy obronca"			 
+             & doswiadczenie ( typ ) = "Czlonek podstawowej 11";
+
+   1004: pilkarz_dla_Ciebie ( typ ) = "Alphonso Davies" if
+             pozycja ( typ ) = "Obronca"
+             & pozycja_obronca ( typ ) ="Lewy obronca"			 
+             & doswiadczenie ( typ ) = "Klasa swiatowa";
+
+   1005: pilkarz_dla_Ciebie ( typ ) = "Michal Pazdan" if
+             pozycja ( typ ) = "Obronca"
+             & pozycja_obronca ( typ ) ="Srodkowy obronca"			 
+             & doswiadczenie ( typ ) = "Czlonek podstawowej 11";
+
+   1006: pilkarz_dla_Ciebie ( typ ) = "Raphael Varane" if
+             pozycja ( typ ) = "Obronca"
+             & pozycja_obronca ( typ ) ="Srodkowy obronca"			 
+             & doswiadczenie ( typ ) = "Klasa swiatowa";
+			 
+   1007: pilkarz_dla_Ciebie ( typ ) = "Sean Kleiber" if
+             pozycja ( typ ) = "Obronca"
+             & pozycja_obronca ( typ ) ="Prawy obronca"			 
+             & doswiadczenie ( typ ) = "Czlonek podstawowej 11";
+			 
+   1008: pilkarz_dla_Ciebie ( typ ) = "Benjamin Pavard" if
+             pozycja ( typ ) = "Obronca"
+             & pozycja_obronca ( typ ) ="Prawy obronca"			 
+             & doswiadczenie ( typ ) = "Klasa swiatowa";
+			 
+   1009: pilkarz_dla_Ciebie ( typ ) = "Martin Odeegard" if
+             pozycja ( typ ) = "Pomocnik"
+             & pozycja_pomocnik ( typ ) ="Srodkowy pomocnik"			 
+             & doswiadczenie ( typ ) = "Czlonek podstawowej 11";
+			 
+   1010: pilkarz_dla_Ciebie ( typ ) = "Luka Modric" if
+             pozycja ( typ ) = "Pomocnik"
+             & pozycja_pomocnik ( typ ) ="Srodkowy pomocnik"			 
+             & doswiadczenie ( typ ) = "Klasa swiatowa";
+			 
+   1011: pilkarz_dla_Ciebie ( typ ) = "Nicolo Zaniolo" if
+             pozycja ( typ ) = "Pomocnik"
+             & pozycja_pomocnik ( typ ) ="Srodkowy pomocnik ofensywny"			 
+             & doswiadczenie ( typ ) = "Czlonek podstawowej 11";
+			 
+   1012: pilkarz_dla_Ciebie ( typ ) = "Kevin De Bruyne" if
+             pozycja ( typ ) = "Pomocnik"
+             & pozycja_pomocnik ( typ ) ="Srodkowy pomocnik ofensywny"			 
+             & doswiadczenie ( typ ) = "Klasa swiatowa";
+			 
+   1013: pilkarz_dla_Ciebie ( typ ) = "Rafal Augustyniak" if
+             pozycja ( typ ) = "Pomocnik"
+             & pozycja_pomocnik ( typ ) ="Srodkowy pomocnik defensywny"			 
+             & doswiadczenie ( typ ) = "Czlonek podstawowej 11";
+			 
+   1014: pilkarz_dla_Ciebie ( typ ) = "Joshua Kimmich" if
+             pozycja ( typ ) = "Pomocnik"
+             & pozycja_pomocnik ( typ ) ="Srodkowy pomocnik defensywny"			 
+             & doswiadczenie ( typ ) = "Klasa swiatowa";
+			 
+   1015: pilkarz_dla_Ciebie ( typ ) = "Marcelo" if
+             pozycja ( typ ) = "Pomocnik"
+             & pozycja_pomocnik ( typ ) ="Marc Cucurela"			 
+             & doswiadczenie ( typ ) = "Czlonek podstawowej 11";	
+			 
+   1016: pilkarz_dla_Ciebie ( typ ) = "Bukayo Saka" if
+             pozycja ( typ ) = "Pomocnik"
+             & pozycja_pomocnik ( typ ) ="Boczny pomocnik"			 
+             & doswiadczenie ( typ ) = "Klasa swiatowa";
+			 
+   1017: pilkarz_dla_Ciebie ( typ ) = "Christian Pulisic" if
+             pozycja ( typ ) = "Napastnik"
+             & pozycja_napastnik ( typ ) ="Skrzydlowy"			 
+             & doswiadczenie ( typ ) = "Czlonek podstawowej 11";
+			 
+   1018: pilkarz_dla_Ciebie ( typ ) = "Neymar" if
+             pozycja ( typ ) = "Napastnik"
+             & pozycja_napastnik ( typ ) ="Skrzydlowy"			 
+             & doswiadczenie ( typ ) = "Klasa swiatowa";
+			 
+   1019: pilkarz_dla_Ciebie ( typ ) = "Arkadiusz Milik" if
+             pozycja ( typ ) = "Napastnik"
+             & pozycja_napastnik ( typ ) ="Srodkowy napastnik"			 
+             & doswiadczenie ( typ ) = "Czlonek podstawowej 11";
+			 
+   1020: pilkarz_dla_Ciebie ( typ ) = "Robert Lewandowski" if
+             pozycja ( typ ) = "Napastnik"
+             & pozycja_napastnik ( typ ) ="Srodkowy napastnik"			 
+             & doswiadczenie ( typ ) = "Klasa swiatowa";			 
+
+  
+
+end; // rules
+
+end; // knowledge source

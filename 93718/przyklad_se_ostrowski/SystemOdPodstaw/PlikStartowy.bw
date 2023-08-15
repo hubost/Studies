@@ -1,0 +1,63 @@
+knowledge base egzoszkielet_wybor
+
+sources
+	baza_wyjaœnieñ:
+    type what_is_file
+    file "baza_wyjaœnieñ.dbw";
+	
+	end;
+	
+	
+facets
+
+  ask yes;
+
+  egzoszkielet_wybor: 
+     single no
+     val oneof
+     {
+        
+		"Góra",
+		"Dul"
+     };
+
+  niedobor : 
+     single yes
+     val oneof
+     {
+        "nogii","reki"
+     };
+	 
+	 
+end;  
+
+
+rules
+
+  0001 : egzoszkielet_wybor= "Góra" if		// (11.0)
+             niedobor = "reki";
+
+  0002 : egzoszkielet_wybor= "Dul" if		// (11.0)
+             niedobor = "nogii";
+			 
+end;   //rules
+
+control
+
+  char Txt1, Txt2, Txt3;
+
+  run;
+  createAppWindow;
+  Txt1 := "System wyboru Egzoszkieletu";
+  Txt2 := "\n\n\nReecznie zrobiony\n\n bez DeTreex 4.0";
+  Txt3 := "Â© UKW, Bydgoszcz 2019";
+  vignette( Txt1, Txt2, Txt3 );
+
+  goal ("egzoszkielet_wybor=X");
+  delNewFacts;
+
+  // <- blok instrukcji i funkcji
+
+end;   //control
+
+end;   //knowledge base

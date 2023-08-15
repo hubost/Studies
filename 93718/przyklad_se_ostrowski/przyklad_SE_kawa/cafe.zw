@@ -1,0 +1,795 @@
+//------------------------------------------------------------------------------
+//
+// Tekst Ÿród³a zapisanego w pliku:
+//  cafe.bzw
+//
+//------------------------------------------------------------------------------
+
+knowledge source cafe
+
+facets
+
+  ask     yes;
+  single  yes;
+
+  kawa_dla_Ciebie :
+     ask     no
+     single  yes
+     val oneof  
+     { 
+        "Artur Boruc",
+        "Gianluigi Dionarumma",
+        "Marcelo",
+        "Alphonso Davies",
+        "Michal Pazdan",
+        "Raphael Varane",
+        "Sean Kleiber",
+        "Benjamin Pavard",
+        "Martin Odeegard",
+        "Luka Modric",
+        "Nicolo Zaniolo",
+        "Kevin De Bruyne",
+        "Marc Cucurela",
+        "Bukayo Saka",
+        "Christian Pulisic",
+        "Neymar",
+        "Arkadiusz Milik",
+        "Robert Lewandowski",
+        "Maple Cold Coffee",
+        "Irish Crem Cold Coffee",
+        "Cafe Americano",
+        "Chocolate Cold Coffee",
+        "Frozen latte z bit¹ œmietan¹",
+        "Cafe Affogato",
+        "Frappe",
+        "Vanilia Hot Coffee",
+        "Raspberry Hot Coffee",
+        "Maple Hot Coffee",
+        "Irish Crem Hot Coffee",
+        "Kawa Kapitañska",
+        "Kawa z Cherry",
+        "Kawa po zbójnicku",
+        "Barmañskie latte",
+        "Kawa zakrapiana miodem pitnym",
+        "Red Dry Coffe",
+        "Red Sweet Coffe",
+        "White Dry Coffe",
+        "White Sweet Coffe",
+        "Kawa z Amaretto",
+        "Kawa z Advocatem"
+     }
+picture
+        {
+        "Grafika\\Mocha.bmp",
+        "Grafika\\Kawa po wiedeñsku.bmp",
+        "Grafika\\Cappuccino.bmp",
+        "Grafika\\Cafe au lait.bmp",
+        "Grafika\\Caffee latte macchiato.bmp",
+        "Grafika\\Irish Caffee.bmp",
+        "Grafika\\Kawa œmietankowa.bmp",
+        "Grafika\\Podwójne esspreso.bmp",
+        "Grafika\\Esspreso.bmp",
+        "Grafika\\Ice Coffee.bmp",
+        "Grafika\\Kawa mro¿ona z lodami.bmp",
+        "Grafika\\Frozen Latte.bmp",
+        "Grafika\\Vanilla Frozen Latte.bmp",
+        "Grafika\\Raspberry Frozen Latte.bmp",
+        "Grafika\\Maple Frozen Latte.bmp",
+        "Grafika\\Irish Cream Frozen Latte.bmp",
+        "Grafika\\Vanilla Cold Coffe.bmp",
+        "Grafika\\Raspberry Cold Coffe.bmp",
+        "Grafika\\Maple Cold Coffee.bmp",
+        "Grafika\\Irish Cream Cold Coffee.bmp",
+        "Grafika\\Cafe Americano.bmp",
+        "Grafika\\Chocolate Cold Coffee.bmp",
+        "Grafika\\Frozen Latte z bit¹ œmietan¹.bmp",
+        "Grafika\\Cafe Affogato.bmp",
+        "Grafika\\Frappe.bmp",
+        "Grafika\\Vanilla Hot Coffee.bmp",
+        "Grafika\\Raspberry Hot Coffe.bmp",
+        "Grafika\\Maple Hot Coffe.bmp",
+        "Grafika\\Irish Cream Hot Coffee.bmp",
+        "Grafika\\Kawa Kapitañska.bmp",
+        "Grafika\\Kawa z Cherry.bmp",
+        "Grafika\\Zbój.bmp",
+        "Grafika\\Barmañskie latte.bmp",
+        "Grafika\\Kawa zakrapiana miodem pitnym.bmp",
+        "Grafika\\Red Dry Coffee.bmp",
+        "Grafika\\Red Sweet Coffee.bmp",
+        "Grafika\\White Dry Coffee.bmp",
+        "Grafika\\White Sweet Coffee.bmp",
+        "Grafika\\Kawa z Amaretto.bmp",
+        "Grafika\\Kawa z Advocatem.bmp"
+     };
+
+  preferowana_kawa :
+     ask     yes
+     single  yes
+     query   "Jak¹ kawê preferujesz?"
+     val oneof  
+     { 
+        "Gor¹ca",
+        "Zimna"
+     }
+picture
+        {
+        "Grafika\\Gor¹ca.bmp",
+        "Grafika\\Zimna.bmp"
+     };
+
+  dodatki :
+     ask     yes
+     single  yes
+     query   "Czy kawa ma zawieraæ dodatki?"
+     val oneof  
+     { 
+        "Tak",
+        "Nie"
+     }
+picture
+        {
+        "Grafika\\TAK.bmp",
+        "Grafika\\NIE.bmp"
+     };
+
+  nabia³ :
+     ask     yes
+     single  yes
+     query   "Jaki rodzaj nabia³u wybierasz?"
+     val oneof  
+     { 
+        "Mleko",
+        "Œmietana"
+     }
+picture
+        {
+        "Grafika\\Mleko.bmp",
+        "Grafika\\Œmietana.bmp"
+     };
+
+  moc :
+     ask     yes
+     single  yes
+     query   "Czy Twoja kawa ma byæ mocna?"
+     val oneof  
+     { 
+        "Tak",
+        "Nie"
+}
+picture
+        {
+        "Grafika\\Kawa mocna.bmp",
+        "Grafika\\S³aba kawa.bmp"
+     };
+
+  dodatki_typu_bita_œmietana_cukier :
+     ask     yes
+     single  yes
+     query   "Czy Twoja kawa ma zawieraæ dodatki typu: bita œmietana, cukier?"
+     val oneof  
+     { 
+        "Tak",
+        "Nie"
+     }
+picture
+        {
+        "Grafika\\Œmietana cukier.bmp",
+        "Grafika\\NIESC.bmp"
+     };
+
+  alkohol :
+     ask     yes
+     single  yes
+     query   "Czy Twoja kawa ma mieæ zawartoœæ alkoholu?"
+     val oneof  
+     { 
+        "Tak",
+        "Nie"
+     }
+picture
+        {
+        "Grafika\\Tak - alkohol.bmp",
+        "Grafika\\Nie - alkohol.bmp"
+     };
+
+  podwójne_esspreso :
+     ask     yes
+     single  yes
+     query   "Czy masz ochotê na podwójne esspreso?"
+     val oneof  
+     { 
+        "Tak",
+        "Nie"
+     }
+picture
+        {
+        "Grafika\\Kawa mocnaa.bmp",
+        "Grafika\\S³aba kawaa.bmp"
+     };
+
+  dodatki_typu_czekolada_kakao :
+     ask     yes
+     single  yes
+     query   "Jakie dodatki ma zawieraæ Twoja kawa?"
+     val oneof  
+     { 
+        "Kakao",
+        "Czekolada"
+     }
+picture
+        {
+        "Grafika\\Kakao.bmp",
+        "Grafika\\Czekolada.bmp"
+     };
+
+  cynamon :
+     ask     yes
+     single  yes
+     query   "Czy masz ochotê na kawê z cynamonem?"
+     val oneof  
+     { 
+        "Tak",
+        "Nie"
+     }
+picture
+        {
+        "Grafika\\Cynamon.bmp",
+        "Grafika\\NIECynamon.bmp"
+     };
+
+kakao :
+     ask     yes
+     single  yes
+     query   "Czy Twoja kawa ma mieæ dodatek kakao?"
+     val oneof  
+     { 
+        "Tak",
+        "Nie"
+     }
+picture
+        {
+        "Grafika\\Kakaoo.bmp",
+        "Grafika\\NIEKakao.bmp"
+     };
+
+  sch³odzenie :
+     ask     yes
+     single  yes
+     query   "Wybierz sposób schlodzenia kawy:"
+     val oneof  
+     { 
+        "Lód kruszony",
+        "Lody",
+        "Obie opcje"
+     }
+picture
+        {
+        "Grafika\\Lód kruszony.bmp",
+        "Grafika\\Lody.bmp",
+        "Grafika\\Obie opcje.bmp"
+     };
+
+  dodatki_lód_kruszony :
+     ask     yes
+     single  yes
+     query   "Jakie dodatki ma zawieraæ Twoja kawa?"
+     val oneof  
+     { 
+        "Czekolada",
+        "Syrop",
+        "Bita œmietana ",
+        "Wszystkie wymienione "
+     };
+
+  jednolita :
+     ask     yes
+     single  yes
+     query   "Czy kawa ma byæ jednolita?"
+     val oneof  
+     { 
+        "Tak",
+        "Nie"
+     };
+
+  syrop :
+     ask     yes
+     single  yes
+     query   "Wybierz ulubiony syrop"
+     val oneof  
+     { 
+        "Irish Cream",
+        "Waniliowy",
+        "Malinowy",
+        "Klonowy"
+     }
+picture
+        {
+        "Grafika\\Cream.bmp",
+        "Grafika\\Waniliowy.bmp",
+        "Grafika\\Malinowy.bmp",
+        "Grafika\\Klonowy.bmp"
+     };
+
+  dodatki_typu_bita_œmietana_posypka_czekoladowa :
+     ask     yes
+     single  yes
+     query   "Czy kawa ma zawieraæ dodatki typu: bita œmitana, posypka czekoladowa?"
+     val oneof  
+     { 
+        "Tak",
+        "Nie"
+     }
+picture
+        {
+
+        "Grafika\\TAAK.bmp",
+        "Grafika\\NIIE.bmp"
+     };
+
+  dodatek_syrop :
+     ask     yes
+     single  yes
+     query   "Czy masz apetyt na kawê z syropem?"
+     val oneof  
+     { 
+        "Tak",
+        "Nie"
+     }
+picture
+        {
+
+        "Grafika\\Syroop.bmp",
+        "Grafika\\NIESyrop.bmp"
+     };
+
+  procent :
+     ask     yes
+     single  yes
+     query   "Wybierz zawartoœæ procentow¹ alkoholu:"
+     val oneof  
+     { 
+        "17%",
+        "36%",
+        "40%"
+     }
+picture
+        {
+
+        "Grafika\\17.bmp",
+	"Grafika\\36.bmp",
+        "Grafika\\40.bmp"
+     };
+
+  likier :
+     ask     yes
+     single  yes
+     query   "Czy masz ochotê na kawê z likierem?"
+     val oneof  
+     { 
+        "Tak",
+        "Nie"
+     }
+picture
+        {
+
+        "Grafika\\Likier.bmp",
+        "Grafika\\NieLikier.bmp"
+     };
+
+  rum :
+     ask     yes
+     single  yes
+     query   "Czy masz ochotê na kawê z rumem?"
+     val oneof  
+     { 
+        "Tak",
+        "Nie"
+     }
+picture
+        {
+
+        "Grafika\\Rum.bmp",
+        "Grafika\\NieRum.bmp"
+     };
+
+  migda³y :
+     ask     yes
+     single  yes
+     query   "Czy Twoja kawa ma zawieraæ migda³y?"
+     val oneof  
+     { 
+        "Tak",
+        "Nie"
+     }
+picture
+        {
+
+        "Grafika\\Migda³y.bmp",
+        "Grafika\\NIEMigda³y.bmp"
+     };
+
+  whisky :
+     ask     yes
+     single  yes
+     query   "Czy masz ochotê na kawê z whisky?"
+     val oneof  
+     { 
+        "Tak",
+        "Nie"
+     }
+picture
+        {
+
+        "Grafika\\Whisky.bmp",
+        "Grafika\\NIEWhisky.bmp"
+     };
+
+  rodzaj_wina :
+     ask     yes
+     single  yes
+     query   "Wybierz rodzaj wina:"
+     val oneof  
+     { 
+        "S³odkie",
+        "Wytrawne"
+     };
+
+  dodatek_wino :
+     ask     yes
+     single  yes
+     query   "Czy masz ochotê na kawê z dodatkiem wina?"
+     val oneof  
+     { 
+        "Tak",
+        "Nie"
+     };
+
+  wino :
+     ask     yes
+     single  yes
+     query   "Wybierz wino:"
+     val oneof  
+     { 
+        "Bia³e",
+        "Czerwone"
+     }
+picture
+        {
+
+        "Grafika\\Bia³e.bmp",
+        "Grafika\\Czerwone.bmp"
+     };
+
+  miód :
+     ask     yes
+     single  yes
+     query   "Czy masz ochotê na kawê z dodatkiem miodu?"
+     val oneof  
+     { 
+        "Tak",
+        "Nie"
+     }
+picture
+        {
+
+        "Grafika\\Miód.bmp",
+        "Grafika\\NIEMiód.bmp"
+     };
+
+end; // facets
+
+rules
+
+   1001: kawa_dla_Ciebie ( typ ) = "Mocha" if
+             preferowana_kawa ( typ ) = "Gor¹ca" 
+             & dodatki ( typ ) = "Tak" 
+             & nabia³ ( typ ) = "Mleko" 
+             & dodatki_typu_bita_œmietana_cukier ( typ ) = "Tak" 
+             & dodatki_typu_czekolada_kakao ( typ ) = "Kakao";
+
+   1002: kawa_dla_Ciebie ( typ ) = "Kawa po wiedeñsku" if
+             preferowana_kawa ( typ ) = "Gor¹ca" 
+             & dodatki ( typ ) = "Tak" 
+             & nabia³ ( typ ) = "Mleko" 
+             & dodatki_typu_bita_œmietana_cukier ( typ ) = "Tak" 
+             & dodatki_typu_czekolada_kakao ( typ ) = "Czekolada";
+
+   1003: kawa_dla_Ciebie ( typ ) = "Cappuccino" if
+             preferowana_kawa ( typ ) = "Gor¹ca" 
+             & dodatki ( typ ) = "Tak" 
+             & nabia³ ( typ ) = "Mleko" 
+             & dodatki_typu_bita_œmietana_cukier ( typ ) = "Nie" 
+             & cynamon ( typ ) = "Tak" 
+             & kakao ( typ ) = "Tak";
+
+   1004: kawa_dla_Ciebie ( typ ) = "Cafe au lait" if
+             preferowana_kawa ( typ ) = "Gor¹ca" 
+             & dodatki ( typ ) = "Tak" 
+             & nabia³ ( typ ) = "Mleko" 
+             & dodatki_typu_bita_œmietana_cukier ( typ ) = "Nie" 
+             & cynamon ( typ ) = "Tak" 
+             & kakao ( typ ) = "Nie" 
+             & dodatek_syrop ( typ ) = "Nie";
+
+   1005: kawa_dla_Ciebie ( typ ) = "Caffe latte macchiato" if
+             preferowana_kawa ( typ ) = "Gor¹ca" 
+             & dodatki ( typ ) = "Tak" 
+             & nabia³ ( typ ) = "Mleko" 
+             & dodatki_typu_bita_œmietana_cukier ( typ ) = "Nie" 
+             & cynamon ( typ ) = "Nie";
+
+   1006: kawa_dla_Ciebie ( typ ) = "Irish coffe" if
+             preferowana_kawa ( typ ) = "Gor¹ca" 
+             & dodatki ( typ ) = "Tak" 
+             & nabia³ ( typ ) = "Œmietana" 
+             & alkohol ( typ ) = "Tak" 
+             & procent ( typ ) = "40%" 
+             & whisky ( typ ) = "Tak";
+
+   1007: kawa_dla_Ciebie ( typ ) = "Kawa œmietankowa" if
+             preferowana_kawa ( typ ) = "Gor¹ca" 
+             & dodatki ( typ ) = "Tak" 
+             & nabia³ ( typ ) = "Œmietana" 
+             & alkohol ( typ ) = "Nie";
+
+   1008: kawa_dla_Ciebie ( typ ) = "Esspreso podwójne" if
+             preferowana_kawa ( typ ) = "Gor¹ca" 
+             & dodatki ( typ ) = "Nie" 
+             & moc ( typ ) = "Tak" 
+             & podwójne_esspreso ( typ ) = "Tak";
+
+   1009: kawa_dla_Ciebie ( typ ) = "Esspreso" if
+             preferowana_kawa ( typ ) = "Gor¹ca" 
+             & dodatki ( typ ) = "Nie" 
+             & moc ( typ ) = "Tak" 
+             & podwójne_esspreso ( typ ) = "Nie";
+
+   1010: kawa_dla_Ciebie ( typ ) = "Ice caffee" if
+             preferowana_kawa ( typ ) = "Zimna" 
+             & sch³odzenie ( typ ) = "Obie opcje" 
+             & dodatki_typu_bita_œmietana_posypka_czekoladowa ( typ ) = "Nie";
+
+   1011: kawa_dla_Ciebie ( typ ) = "Kawa mro¿ona z lodami" if
+             preferowana_kawa ( typ ) = "Zimna" 
+             & sch³odzenie ( typ ) = "Obie opcje" 
+             & dodatki_typu_bita_œmietana_posypka_czekoladowa ( typ ) = "Tak" 
+             & jednolita ( typ ) = "Nie";
+
+   1012: kawa_dla_Ciebie ( typ ) = "Frozen latte" if
+             preferowana_kawa ( typ ) = "Zimna" 
+             & sch³odzenie ( typ ) = "Obie opcje" 
+             & dodatki_typu_bita_œmietana_posypka_czekoladowa ( typ ) = "Tak" 
+             & jednolita ( typ ) = "Tak";
+
+   1013: kawa_dla_Ciebie ( typ ) = "Vanila frozen latte" if
+             preferowana_kawa ( typ ) = "Zimna" 
+             & sch³odzenie ( typ ) = "Lód kruszony" 
+             & dodatki ( typ ) = "Tak" 
+             & dodatki_lód_kruszony ( typ ) = "Syrop" 
+             & syrop ( typ ) = "Waniliowy";
+
+   1014: kawa_dla_Ciebie ( typ ) = "Raspberry frozen latte" if
+             preferowana_kawa ( typ ) = "Zimna" 
+             & sch³odzenie ( typ ) = "Lód kruszony" 
+             & dodatki ( typ ) = "Tak" 
+             & dodatki_lód_kruszony ( typ ) = "Syrop" 
+             & syrop ( typ ) = "Malinowy";
+
+   1015: kawa_dla_Ciebie ( typ ) = "Maple frozen latte" if
+             preferowana_kawa ( typ ) = "Zimna" 
+             & sch³odzenie ( typ ) = "Lód kruszony" 
+             & dodatki ( typ ) = "Tak" 
+             & dodatki_lód_kruszony ( typ ) = "Syrop" 
+             & syrop ( typ ) = "Klonowy";
+
+   1016: kawa_dla_Ciebie ( typ ) = "Irish Cream Frozen Latte" if
+             preferowana_kawa ( typ ) = "Zimna" 
+             & sch³odzenie ( typ ) = "Lód kruszony" 
+             & dodatki ( typ ) = "Tak" 
+             & dodatki_lód_kruszony ( typ ) = "Syrop" 
+             & syrop ( typ ) = "Irish Cream";
+
+   1017: kawa_dla_Ciebie ( typ ) = "Vanilla Cold Coffee" if
+             preferowana_kawa ( typ ) = "Zimna" 
+             & sch³odzenie ( typ ) = "Lód kruszony" 
+             & dodatki ( typ ) = "Tak" 
+             & dodatki_lód_kruszony ( typ ) = "Wszystkie wymienione " 
+             & syrop ( typ ) = "Waniliowy";
+
+   1018: kawa_dla_Ciebie ( typ ) = "Raspberry Cold Coffee" if
+             preferowana_kawa ( typ ) = "Zimna" 
+             & sch³odzenie ( typ ) = "Lód kruszony" 
+             & dodatki ( typ ) = "Tak" 
+             & dodatki_lód_kruszony ( typ ) = "Wszystkie wymienione " 
+             & syrop ( typ ) = "Malinowy";
+
+   1019: kawa_dla_Ciebie ( typ ) = "Maple Cold Coffee" if
+             preferowana_kawa ( typ ) = "Zimna" 
+             & sch³odzenie ( typ ) = "Lód kruszony" 
+             & dodatki ( typ ) = "Tak" 
+             & dodatki_lód_kruszony ( typ ) = "Wszystkie wymienione " 
+             & syrop ( typ ) = "Klonowy";
+
+   1020: kawa_dla_Ciebie ( typ ) = "Irish Crem Cold Coffee" if
+             preferowana_kawa ( typ ) = "Zimna" 
+             & sch³odzenie ( typ ) = "Lód kruszony" 
+             & dodatki ( typ ) = "Tak" 
+             & dodatki_lód_kruszony ( typ ) = "Wszystkie wymienione " 
+             & syrop ( typ ) = "Irish Cream";
+
+   1021: kawa_dla_Ciebie ( typ ) = "Cafe Americano" if
+             preferowana_kawa ( typ ) = "Gor¹ca" 
+             & dodatki ( typ ) = "Nie" 
+             & moc ( typ ) = "Nie";
+
+   1022: kawa_dla_Ciebie ( typ ) = "Chocolate Cold Coffee" if
+             preferowana_kawa ( typ ) = "Zimna" 
+             & sch³odzenie ( typ ) = "Lód kruszony" 
+             & dodatki ( typ ) = "Tak" 
+             & dodatki_lód_kruszony ( typ ) = "Czekolada";
+
+   1023: kawa_dla_Ciebie ( typ ) = "Frozen latte z bit¹ œmietan¹" if
+             preferowana_kawa ( typ ) = "Zimna" 
+             & sch³odzenie ( typ ) = "Lód kruszony" 
+             & dodatki ( typ ) = "Tak" 
+             & dodatki_lód_kruszony ( typ ) = "Bita œmietana ";
+
+   1024: kawa_dla_Ciebie ( typ ) = "Cafe Affogato" if
+             preferowana_kawa ( typ ) = "Zimna" 
+             & sch³odzenie ( typ ) = "Lody";
+
+   1025: kawa_dla_Ciebie ( typ ) = "Frappe" if
+             preferowana_kawa ( typ ) = "Zimna" 
+             & sch³odzenie ( typ ) = "Lód kruszony" 
+             & dodatki ( typ ) = "Nie";
+
+   1026: kawa_dla_Ciebie ( typ ) = "Vanilia Hot Coffee" if
+             preferowana_kawa ( typ ) = "Gor¹ca" 
+             & dodatki ( typ ) = "Tak" 
+             & nabia³ ( typ ) = "Mleko" 
+             & dodatki_typu_bita_œmietana_cukier ( typ ) = "Nie" 
+             & cynamon ( typ ) = "Tak" 
+             & kakao ( typ ) = "Nie" 
+             & dodatek_syrop ( typ ) = "Tak" 
+             & syrop ( typ ) = "Waniliowy";
+
+   1027: kawa_dla_Ciebie ( typ ) = "Raspberry Hot Coffee" if
+             preferowana_kawa ( typ ) = "Gor¹ca" 
+             & dodatki ( typ ) = "Tak" 
+             & nabia³ ( typ ) = "Mleko" 
+             & dodatki_typu_bita_œmietana_cukier ( typ ) = "Nie" 
+             & cynamon ( typ ) = "Tak" 
+             & kakao ( typ ) = "Nie" 
+             & dodatek_syrop ( typ ) = "Tak" 
+             & syrop ( typ ) = "Malinowy";
+
+   1028: kawa_dla_Ciebie ( typ ) = "Maple Hot Coffee" if
+             preferowana_kawa ( typ ) = "Gor¹ca" 
+             & dodatki ( typ ) = "Tak" 
+             & nabia³ ( typ ) = "Mleko" 
+             & dodatki_typu_bita_œmietana_cukier ( typ ) = "Nie" 
+             & cynamon ( typ ) = "Tak" 
+             & kakao ( typ ) = "Nie" 
+             & dodatek_syrop ( typ ) = "Tak" 
+             & syrop ( typ ) = "Klonowy";
+
+   1029: kawa_dla_Ciebie ( typ ) = "Irish Crem Hot Coffee" if
+             preferowana_kawa ( typ ) = "Gor¹ca" 
+             & dodatki ( typ ) = "Tak" 
+             & nabia³ ( typ ) = "Mleko" 
+             & dodatki_typu_bita_œmietana_cukier ( typ ) = "Nie" 
+             & cynamon ( typ ) = "Tak" 
+             & kakao ( typ ) = "Nie" 
+             & dodatek_syrop ( typ ) = "Tak" 
+             & syrop ( typ ) = "Irish Cream";
+
+   1030: kawa_dla_Ciebie ( typ ) = "Kawa Kapitañska" if
+             preferowana_kawa ( typ ) = "Gor¹ca" 
+             & dodatki ( typ ) = "Tak" 
+             & nabia³ ( typ ) = "Œmietana" 
+             & alkohol ( typ ) = "Tak" 
+             & procent ( typ ) = "36%" 
+             & rum ( typ ) = "Tak";
+
+   1031: kawa_dla_Ciebie ( typ ) = "Kawa z Cherry" if
+             preferowana_kawa ( typ ) = "Gor¹ca" 
+             & dodatki ( typ ) = "Tak" 
+             & nabia³ ( typ ) = "Œmietana" 
+             & alkohol ( typ ) = "Tak" 
+             & procent ( typ ) = "36%" 
+             & rum ( typ ) = "Nie";
+
+   1032: kawa_dla_Ciebie ( typ ) = "Kawa po zbójnicku" if
+             preferowana_kawa ( typ ) = "Gor¹ca" 
+             & dodatki ( typ ) = "Tak" 
+             & nabia³ ( typ ) = "Œmietana" 
+             & alkohol ( typ ) = "Tak" 
+             & procent ( typ ) = "40%" 
+             & whisky ( typ ) = "Nie";
+
+   1033: kawa_dla_Ciebie ( typ ) = "Barmañskie latte" if
+             preferowana_kawa ( typ ) = "Gor¹ca" 
+             & dodatki ( typ ) = "Tak" 
+             & nabia³ ( typ ) = "Œmietana" 
+             & alkohol ( typ ) = "Tak" 
+             & procent ( typ ) = "17%" 
+             & likier ( typ ) = "Nie" 
+             & dodatek_wino ( typ ) = "Nie" 
+             & miód ( typ ) = "Nie";
+
+   1034: kawa_dla_Ciebie ( typ ) = "Kawa zakrapiana miodem pitnym" if
+             preferowana_kawa ( typ ) = "Gor¹ca" 
+             & dodatki ( typ ) = "Tak" 
+             & nabia³ ( typ ) = "Œmietana" 
+             & alkohol ( typ ) = "Tak" 
+             & procent ( typ ) = "17%" 
+             & likier ( typ ) = "Nie" 
+             & dodatek_wino ( typ ) = "Nie" 
+             & miód ( typ ) = "Tak";
+
+   1035: kawa_dla_Ciebie ( typ ) = "Red Dry Coffe" if
+             preferowana_kawa ( typ ) = "Gor¹ca" 
+             & dodatki ( typ ) = "Tak" 
+             & nabia³ ( typ ) = "Œmietana" 
+             & alkohol ( typ ) = "Tak" 
+             & procent ( typ ) = "17%" 
+             & likier ( typ ) = "Nie" 
+             & dodatek_wino ( typ ) = "Tak" 
+             & wino ( typ ) = "Czerwone" 
+             & rodzaj_wina ( typ ) = "Wytrawne";
+
+   1036: kawa_dla_Ciebie ( typ ) = "Red Sweet Coffe" if
+             preferowana_kawa ( typ ) = "Gor¹ca" 
+             & dodatki ( typ ) = "Tak" 
+             & nabia³ ( typ ) = "Œmietana" 
+             & alkohol ( typ ) = "Tak" 
+             & procent ( typ ) = "17%" 
+             & likier ( typ ) = "Nie" 
+             & dodatek_wino ( typ ) = "Tak" 
+             & wino ( typ ) = "Czerwone" 
+             & rodzaj_wina ( typ ) = "S³odkie";
+
+   1037: kawa_dla_Ciebie ( typ ) = "White Dry Coffe" if
+             preferowana_kawa ( typ ) = "Gor¹ca" 
+             & dodatki ( typ ) = "Tak" 
+             & nabia³ ( typ ) = "Œmietana" 
+             & alkohol ( typ ) = "Tak" 
+             & procent ( typ ) = "17%" 
+             & likier ( typ ) = "Nie" 
+             & dodatek_wino ( typ ) = "Tak" 
+             & wino ( typ ) = "Bia³e" 
+             & rodzaj_wina ( typ ) = "Wytrawne";
+
+   1038: kawa_dla_Ciebie ( typ ) = "White Sweet Coffe" if
+             preferowana_kawa ( typ ) = "Gor¹ca" 
+             & dodatki ( typ ) = "Tak" 
+             & nabia³ ( typ ) = "Œmietana" 
+             & alkohol ( typ ) = "Tak" 
+             & procent ( typ ) = "17%" 
+             & likier ( typ ) = "Nie" 
+             & dodatek_wino ( typ ) = "Tak" 
+             & wino ( typ ) = "Bia³e" 
+             & rodzaj_wina ( typ ) = "S³odkie";
+
+   1039: kawa_dla_Ciebie ( typ ) = "Kawa z Amaretto" if
+             preferowana_kawa ( typ ) = "Gor¹ca" 
+             & dodatki ( typ ) = "Tak" 
+             & nabia³ ( typ ) = "Œmietana" 
+             & alkohol ( typ ) = "Tak" 
+             & procent ( typ ) = "17%" 
+             & likier ( typ ) = "Tak" 
+             & migda³y ( typ ) = "Tak";
+
+   1040: kawa_dla_Ciebie ( typ ) = "Kawa z Advocatem" if
+             preferowana_kawa ( typ ) = "Gor¹ca" 
+             & dodatki ( typ ) = "Tak" 
+             & nabia³ ( typ ) = "Œmietana" 
+             & alkohol ( typ ) = "Tak" 
+             & procent ( typ ) = "17%" 
+             & likier ( typ ) = "Tak" 
+             & migda³y ( typ ) = "Nie";
+
+
+end; // rules
+
+end; // knowledge source
