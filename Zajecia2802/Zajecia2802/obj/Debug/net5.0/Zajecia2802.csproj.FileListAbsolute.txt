@@ -1,0 +1,16 @@
+C:\Users\Hubert\source\repos\Zajecia2802\Zajecia2802\bin\Debug\net5.0\Zajecia2802.exe
+C:\Users\Hubert\source\repos\Zajecia2802\Zajecia2802\bin\Debug\net5.0\Zajecia2802.deps.json
+C:\Users\Hubert\source\repos\Zajecia2802\Zajecia2802\bin\Debug\net5.0\Zajecia2802.runtimeconfig.json
+C:\Users\Hubert\source\repos\Zajecia2802\Zajecia2802\bin\Debug\net5.0\Zajecia2802.runtimeconfig.dev.json
+C:\Users\Hubert\source\repos\Zajecia2802\Zajecia2802\bin\Debug\net5.0\Zajecia2802.dll
+C:\Users\Hubert\source\repos\Zajecia2802\Zajecia2802\bin\Debug\net5.0\ref\Zajecia2802.dll
+C:\Users\Hubert\source\repos\Zajecia2802\Zajecia2802\bin\Debug\net5.0\Zajecia2802.pdb
+C:\Users\Hubert\source\repos\Zajecia2802\Zajecia2802\obj\Debug\net5.0\Zajecia2802.csproj.AssemblyReference.cache
+C:\Users\Hubert\source\repos\Zajecia2802\Zajecia2802\obj\Debug\net5.0\Zajecia2802.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hubert\source\repos\Zajecia2802\Zajecia2802\obj\Debug\net5.0\Zajecia2802.AssemblyInfoInputs.cache
+C:\Users\Hubert\source\repos\Zajecia2802\Zajecia2802\obj\Debug\net5.0\Zajecia2802.AssemblyInfo.cs
+C:\Users\Hubert\source\repos\Zajecia2802\Zajecia2802\obj\Debug\net5.0\Zajecia2802.csproj.CoreCompileInputs.cache
+C:\Users\Hubert\source\repos\Zajecia2802\Zajecia2802\obj\Debug\net5.0\Zajecia2802.dll
+C:\Users\Hubert\source\repos\Zajecia2802\Zajecia2802\obj\Debug\net5.0\ref\Zajecia2802.dll
+C:\Users\Hubert\source\repos\Zajecia2802\Zajecia2802\obj\Debug\net5.0\Zajecia2802.pdb
+C:\Users\Hubert\source\repos\Zajecia2802\Zajecia2802\obj\Debug\net5.0\Zajecia2802.genruntimeconfig.cache
