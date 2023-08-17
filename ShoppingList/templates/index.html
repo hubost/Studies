@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div class="body">
+<div class="title">
+<h1>My Shopping List</h1>
+</div>
+<div class="AddNewLists">
+
+</div>
+     <div class="ShoppingLists3">
+        <h5>Wpisz interesujące Cie produkty</h5>
+
+         <form action="/" method="POST">
+             <input type="text" name="content" id="content"><br>
+             <input type="submit" value="Stwórz nową liste">
+         </form>
+    </div>
+    {% if tasks|length < 1 %}
+         <h5 id="naglowek">Nie znaleziono żadnych list. Stwórz liste powyżej</h5>
+         {% else %}
+<div class="content">
+    <table>
+        <tr>
+            <th>Id Listy</th>
+            <th>Produkty</th>
+            <th>Czynności</th>
+        </tr>
+        {% for task in tasks %}
+        <tr>
+        <td>{{ task.list_id }}</td>
+        <td>{{ task.content }}</td>
+            <td>
+            <a href="/delete/{{task.list_id}}">Usuń</a>
+            <br>
+            <a href="/update/{{task.list_id}}">Edytuj</a>
+        </td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+
+
+</div>
+</div>
+<footer>
+  <p>Autor: Hubert Ostrowski</p>
+  <p><a id="stopka" href="mailto:hubert.ostrowski@student.ukw.edu.pl">hubert.ostrowski@student.ukw.edu.pl</a></p>
+</footer>
+{% endblock %}
